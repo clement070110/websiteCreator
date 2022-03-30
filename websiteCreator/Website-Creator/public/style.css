@@ -1,0 +1,66 @@
+html {
+  --scrollbarBG: #4c4d4d;
+  --thumbBG: #2e33dc;
+}
+body {
+	background-color:#f6b73c;
+	overflow-x:clip;
+	scrollbar-color: green red;
+	overflow-y:auto;
+  scrollbar-width: thin;
+  scrollbar-color: green red;
+}
+#h1Input{
+	background-color:#f6b73c;
+	text-align:center;
+	font-size:30px;
+	padding:2%;
+	color:white;
+	border: solid 1px;
+	border-color:#4d4d4d;
+}
+textarea {
+	background-color:#f6b73c;
+	font-size:20px;
+	color:white;
+	margin:2%;
+	margin-top:30px;
+	border-color:#4d4d4d;
+}
+#toolpallet{
+	left:-10px;
+	border-top-right-radius: 40px 40px;
+	border-bottom-right-radius: 40px 40px;
+	margin:-16px;
+	margin-inline-start:8px;
+	display:flex-box;
+	padding:10px;
+	width:170px;
+	height:100%;
+	color:#000000;
+	text-shadow: #787878 0px 2px 10px;
+	position:fixed;
+	z-index:1;
+	background-color:#ffffff;	
+	box-shadow: 5px 0px 10px #3b3b3b;
+  animation: mymove 1s;
+}
+@keyframes mymove {
+  from {left: -180px;opacity:0.95;}
+  to {left: -10px;opacity:1;}
+}
+@keyframes cacherTool{
+	from{left: -10px;opacity:1;}
+	to{left:-180px;opacity:0.95;}
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
